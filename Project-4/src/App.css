@@ -1,0 +1,8 @@
+.dark .bg {
+  background-color: black;
+  color: white;
+}
+.light .bg {
+  background-color: white;
+  color: black;
+}
