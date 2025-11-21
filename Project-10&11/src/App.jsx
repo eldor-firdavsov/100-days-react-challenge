@@ -7,8 +7,14 @@ function App() {
   const [error, setError] = useState("");
 
   const handleLogin = () => {
-    if (email === "test@test.com" && password === "12345") {
+    if(!email){
+      setError("Emailni to'ldiring")
+    } else if(!password){
+      setError("Parolni to'ldiring")
+    }
+    else  if (email === "test@test.com" && password === "12345") {
       alert("Login successful!");
+      
     } else {
       setError("Email yoki parol noto'g'ri");
     }
